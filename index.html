@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<title>CRONÔMETRO</title>
+<link rel="stylesheet" type="text/css" href="estilo.css" />
+<script type="text/javascript" lang="javascript" src="script.js"></script>
+</head>
+
+<body>
+	<section>
+		<article>
+			<fieldset class="Classexibe" id="exibe"><legend>Exibição</legend>
+				<p><input class="mostrarValor" type="text" id="mostrarValor" size="4" readonly="readonly" value="00:00:00"/></p>
+			</fieldset>
+			<fieldset><legend>Configuração</legend>
+                <p><label for="hor">Colocar horas: </label><input type="text" id="hor" size="2" maxlength="2"/></p>
+				<p><label for="min">Colocar minutos: </label><input type="text" id="min" size="2" maxlength="2"/></p>
+				<p><label for="seg">Colocar segundos: </label><input type="text" id="seg" size="2" maxlength="2"/></p>
+			</fieldset>
+			<fieldset><legend>Comandos</legend>
+				<p>
+					<input class="btn" type="button" value="INICIAR" id="btnIniciar" onclick="IniciarCronometro('start')" /> 
+					<input class="btn" type="button" value="PAUSAR" id="btnPausar" onclick="PausarCronometro()" disabled="disabled" /> 
+					<input class="btn" type="button" value="RESETAR" id="btnResetar" onclick="ResetarCronometro()" disabled="disabled" /> 
+				</p>
+			</fieldset>
+		</article>
+	</section>
+</body>
+</html>

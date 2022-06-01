@@ -1,0 +1,54 @@
+html, body {
+	height: 99%;
+	
+}
+body {
+	background-color: #aa0a55;
+    margin:10%;
+    margin-left: 35%;
+	
+}
+.mostrarValor{
+	text-align: center;
+	border:5px solid rgb(4, 7, 118);
+	font-size: 40pt;
+	
+	
+}
+.mostrarValor2{
+	text-align: center;
+	border:2px solid rgb(4, 7, 118);
+	font-size: 40pt;
+	animation: fade 10000ms infinite;
+	
+}
+
+.Classexibe{
+	text-align:center;
+	
+}
+.Classexibe2{
+	text-align:center;
+	animation: fade 10000ms infinite;
+}
+section {
+	width: 350px;
+	
+}
+
+.btn {
+	
+	width:100px;
+	border-radius: 10px;
+	
+
+}
+
+
+@keyframes fade {
+	0% {bakcground-color:white;}
+	25% {background-color:orange;}
+	50% {background-color:green;}
+	75% {background-color:red;}
+	100% {background-color: white;}
+}
