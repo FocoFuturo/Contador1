@@ -17,17 +17,17 @@ function IniciarCronometro(valor) {
 
 	if (evento == "start") {
 		if (!document.getElementById('hor').readOnly) {
-			if (!this.validarNumero(this.configHora) || document.getElementById('hor').value > 24) {
-				alert("Campo hora não é um número!");
+			if (!this.validarNumero(this.configHora) || document.getElementById('hor').value >= (23.59)) {
+				alert("Informe as horas entre 0 e 23!");
 				return;
 			}
 
 			if (!this.validarNumero(this.configMinuto) || document.getElementById('min').value > 59) {
-				alert("Campo minuto não é um número (0 a 59)!");
+				alert("Informe os minutos entre 0 e 59!");
 				return;
 			}
 			if (!this.validarNumero(this.configSegundo) || document.getElementById('seg').value > 59) {
-				alert("Campo segundo não é um número válido (0 a 59)!");
+				alert("Informe os segundos entre 0 e 59!");
 				return;
 			}
 			document.getElementById('hor').readOnly = true;
